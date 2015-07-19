@@ -14,4 +14,6 @@ module.exports = function() {
 	};
 
 	app.use(express.static('./dist'));
+
+	return app;
 };
