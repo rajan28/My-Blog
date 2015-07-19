@@ -1,19 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name blogApp
- * @description
- * # blogApp
- *
- * Main module of the application.
- */
-angular
-  .module('myBlog', [
-    'ngAnimate',
-    'ngResource',
-    'ngRoute'
-  ])
+angular.module('myBlog', ['ngAnimate', 'ngResource', 'ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
