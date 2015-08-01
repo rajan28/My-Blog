@@ -1,0 +1,8 @@
+<section data-ng-controller="ArticleCtrl" data-ng-init="findOne()">
+    <h1 data-ng-bind="article.title"></h1>
+    <small>
+        <em>Posted on</em>
+        <em data-ng-bind="article.created | date:'mediumDate'"></em>
+    </small>
+    <p data-ng-bind="article.content"></p>
+</section>

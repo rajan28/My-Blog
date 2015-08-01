@@ -1,0 +1,233 @@
+.header {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .2);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1em;
+}
+
+.header-photo {
+    background: url('../images/yeoman.png')no-repeat 2px 2px;
+    background-size: 40px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    box-sizing: content-box;
+    display: inline-block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 40px;
+    margin: 0 .5em;
+    padding: 2px;
+    -webkit-transition: border-color .2s cubic-bezier(.4, 0, .2, 1);
+    transition: border-color .2s cubic-bezier(.4, 0, .2, 1);
+    width: 40px;
+}
+
+.header-photo:hover {
+    border-color: #4db380;
+}
+
+.header-info {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+.header-title {
+    font-size: 1em;
+    line-height: 1;
+    margin: 0;
+    max-width: 6em;
+    -webkit-transition: color .2s cubic-bezier(.4, 0, .2, 1);
+    transition: color .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.header-tagline {
+    display: none;
+}
+
+.header-info:hover .header-title {
+    color: #4db380;
+}
+
+.header-social {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.header-nav {
+    display: none;
+}
+
+@media (min-width: 420px) {
+    .header-title {
+        max-width: 100%;
+    }
+
+    .header-tagline {
+        color: #999;
+        display: block;
+        font-size: .75em;
+        margin: 0;
+    }
+}
+
+@media (min-width: 570px) {
+    .header {
+        padding: 1.25em 2em;
+    }
+
+    .header-title {
+        font-size: 1.167em;
+    }
+
+    .header-photo {
+        background-size: 50px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width: 800px) {
+    .header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-info {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        margin-bottom: 1.25em;
+    }
+
+    .header-title {
+        margin-bottom: .1em;
+    }
+
+    .header-photo {
+        background-size: 5pc;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        height: 5pc;
+        margin: 0 0 1.25em;
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1;
+        width: 5pc;
+    }
+
+    .header-profile:hover {
+        color: #4db380;
+    }
+
+    .header-profile:hover .header-photo {
+        border-color: #4db380;
+    }
+
+    .header-social {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        margin-bottom: 1.25em;
+    }
+    .header-nav {
+        display: block;
+    }
+}
+
+.social-nav {
+    -webkit-box-pack: inherit;
+    -webkit-justify-content: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+}
+
+.social-nav,.social-nav-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.social-nav-icon {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 24px;
+    width: 24px;
+}
+
+.social-nav-icon+.social-nav-icon {
+    margin-left: .4em;
+}
+
+.social-nav-icon svg {
+    fill: #ccc;
+    height: 24px;
+    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+    width: 24px;
+}
+
+.social-nav-icon--twitter:hover svg {
+    fill: #55acee;
+}
+
+.social-nav-icon--github:hover svg {
+    fill: #171715;
+}
+
+.social-nav-icon--rss:hover svg {
+    fill: #f93;
+}
+
+.main-nav {
+    font-size: .8em;
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+}
+
+.main-nav a {
+    color: #999;
+    display: block;
+    padding: .2em 0;
+    text-decoration: none;
+    -webkit-transition: color .2s cubic-bezier(.4, 0, .2, 1);
+    transition: color .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.main-nav a:active,.main-nav a:focus,.main-nav a:hover {
+    color: #4db380;
+}

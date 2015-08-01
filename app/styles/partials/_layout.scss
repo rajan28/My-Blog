@@ -1,0 +1,44 @@
+.content-container {
+    padding: 1.5em 1em 1em;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 42em;
+}
+
+@media (min-width: 570px) {
+    .content-container {
+        padding: 2em;
+    }
+}
+
+@media (min-width: 800px) {
+    .site {
+        overflow-y: scroll;
+    }
+
+    .header-container {
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 12em;
+    }
+
+    .content-container {
+        margin-left: 12em;
+        padding: 5em 3em 3em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .header-container {
+        width: 16em;
+    }
+
+    .content-container {
+        margin-left: 16em;
+        padding: 6em 5em 4em;
+    }
+}

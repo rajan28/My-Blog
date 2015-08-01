@@ -2,8 +2,10 @@
   "name": "blog",
   "version": "0.0.0",
   "dependencies": {
+    "body-parser": "^1.13.2",
     "compression": "^1.5.1",
     "express": "^4.13.1",
+    "method-override": "^2.3.4",
     "mongoose": "^4.0.7",
     "morgan": "^1.6.1"
   },
