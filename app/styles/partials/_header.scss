@@ -12,21 +12,18 @@
 }
 
 .header-photo {
-    background: url('../images/yeoman.png')no-repeat 2px 2px;
+    background: url("../images/avatar.jpg") no-repeat 2px 2px;
     background-size: 40px;
-    border: 1px solid #555;
-    border-radius: 50%;
+    border: 3px solid #555;
+    border-radius: 10%;
     box-sizing: content-box;
     display: inline-block;
-    -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     height: 40px;
     margin: 0 .5em;
     padding: 2px;
-    -webkit-transition: border-color .2s cubic-bezier(.4, 0, .2, 1);
-    transition: border-color .2s cubic-bezier(.4, 0, .2, 1);
+    transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     width: 40px;
 }
 

@@ -22,6 +22,22 @@ angular.module('myBlog').config(function($routeProvider, $locationProvider) {
         templateUrl: 'views/articles/list-articles.html',
         controller: 'ArticleCtrl'
       })
+      .when('/portfolio', {
+        templateUrl: 'views/portfolio.html',
+        controller: 'PortfolioCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
+      })
+      .when('/personal', {
+        templateUrl: 'views/articles/list-personal-articles.html',
+        controller: 'ArticleCtrl'
+      })
+      .when('/tech', {
+        templateUrl: 'views/articles/list-tech-articles.html',
+        controller: 'ArticleCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

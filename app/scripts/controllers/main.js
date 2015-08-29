@@ -1,17 +1,14 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name blogApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the blogApp
- */
-angular.module('myBlog')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('myBlog').controller('MainCtrl', function($scope) {
+
+	$(document).ready(function() {
+		$('#owl-example').owlCarousel({
+			singleItem: true,
+			autoPlay: 3000,
+			rewindNav: false
+		});
+	});
+
+	$scope.bob = 'hi';
+});
